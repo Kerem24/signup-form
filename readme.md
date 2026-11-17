@@ -22,3 +22,6 @@ A responsive sign-up form built as part of **The Odin Project** JavaScript curri
 ├── script.js
 └── img/
     └── background.jpg
+```
+
+Live Preview: https://kerem24.github.io/signup-form/
