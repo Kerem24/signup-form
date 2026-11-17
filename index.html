@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
+<div class="page">
+
+    <div class="background">
+        <img src="img/background.jpg" alt="My beautiful background" id="background">
+    </div>
+
+    <div id="menu">
+        <div class="hero">
+            <p class="hero-text">Congratulations, you found a form that literally leads nowhere! I spent way too many hours wrestling with CSS Flexbox just so you could type fake data into these boxes. Do me a favor and pretend this is a life-changing SaaS platform.</p>
+            <p class="sub-text">Your imaginary productivity depends on it.</p>
+        </div>
+        <div class="form-section">
+            <h2 class="form-section-header">Take an action!</h2>
+
+            <form>
+                <div id="initials">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Kerem">
+                    </div>
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Smith">
+                    </div>
+                </div>
+
+                <div id="contact">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="keremk87e@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone" placeholder="+905122049984" required>
+                    </div>
+                </div>
+
+                <div id="pw">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" minlength="5" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="password" minlength="5" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <button class="submitBtn" type="submit">Create Account</button>
+            <p class="already">Already have an account? <span class="login"><a href="#">Log in</a></span> </p>
+
+        </div>
+    </div>
+
+</div>
+
 
 </body>
 </html>
